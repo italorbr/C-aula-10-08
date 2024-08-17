@@ -1,0 +1,13 @@
+C:\Users\Laboratorio-info\Documents\Visual Studio 2019\EmpresaABC\Cantina\bin\Debug\Cantina.exe.config
+C:\Users\Laboratorio-info\Documents\Visual Studio 2019\EmpresaABC\Cantina\bin\Debug\Cantina.exe
+C:\Users\Laboratorio-info\Documents\Visual Studio 2019\EmpresaABC\Cantina\bin\Debug\Cantina.pdb
+C:\Users\Laboratorio-info\Documents\Visual Studio 2019\EmpresaABC\Cantina\obj\Debug\Cantina.csproj.AssemblyReference.cache
+C:\Users\Laboratorio-info\Documents\Visual Studio 2019\EmpresaABC\Cantina\obj\Debug\Cantina.frmLogin.resources
+C:\Users\Laboratorio-info\Documents\Visual Studio 2019\EmpresaABC\Cantina\obj\Debug\Cantina.Properties.Resources.resources
+C:\Users\Laboratorio-info\Documents\Visual Studio 2019\EmpresaABC\Cantina\obj\Debug\Cantina.csproj.GenerateResource.cache
+C:\Users\Laboratorio-info\Documents\Visual Studio 2019\EmpresaABC\Cantina\obj\Debug\Cantina.csproj.CoreCompileInputs.cache
+C:\Users\Laboratorio-info\Documents\Visual Studio 2019\EmpresaABC\Cantina\obj\Debug\Cantina.exe
+C:\Users\Laboratorio-info\Documents\Visual Studio 2019\EmpresaABC\Cantina\obj\Debug\Cantina.pdb
+C:\Users\Laboratorio-info\Documents\Visual Studio 2019\EmpresaABC\Cantina\obj\Debug\Cantina.frmMenuPrincipal.resources
+C:\Users\Laboratorio-info\Documents\Visual Studio 2019\EmpresaABC\Cantina\obj\Debug\Cantina.frmSplash.resources
+C:\Users\Laboratorio-info\Documents\Visual Studio 2019\EmpresaABC\Cantina\obj\Debug\Cantina.Form1.resources
