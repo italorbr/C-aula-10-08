@@ -29,11 +29,13 @@ namespace Cantina
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSplash));
             this.lblValor = new System.Windows.Forms.Label();
             this.pgbSplash = new System.Windows.Forms.ProgressBar();
             this.lblPorcentagem = new System.Windows.Forms.Label();
             this.pctSplash = new System.Windows.Forms.PictureBox();
+            this.tmrSplash = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pctSplash)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,7 +43,7 @@ namespace Cantina
             // 
             this.lblValor.AutoSize = true;
             this.lblValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValor.Location = new System.Drawing.Point(377, 325);
+            this.lblValor.Location = new System.Drawing.Point(368, 325);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(18, 20);
             this.lblValor.TabIndex = 0;
@@ -52,15 +54,13 @@ namespace Cantina
             this.pgbSplash.Location = new System.Drawing.Point(243, 348);
             this.pgbSplash.Name = "pgbSplash";
             this.pgbSplash.Size = new System.Drawing.Size(298, 23);
-            this.pgbSplash.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.pgbSplash.TabIndex = 1;
-            this.pgbSplash.Value = 100;
             // 
             // lblPorcentagem
             // 
             this.lblPorcentagem.AutoSize = true;
             this.lblPorcentagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcentagem.Location = new System.Drawing.Point(392, 325);
+            this.lblPorcentagem.Location = new System.Drawing.Point(403, 325);
             this.lblPorcentagem.Name = "lblPorcentagem";
             this.lblPorcentagem.Size = new System.Drawing.Size(23, 20);
             this.lblPorcentagem.TabIndex = 2;
@@ -73,9 +73,15 @@ namespace Cantina
             this.pctSplash.Location = new System.Drawing.Point(243, 73);
             this.pctSplash.Name = "pctSplash";
             this.pctSplash.Size = new System.Drawing.Size(298, 218);
-            this.pctSplash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctSplash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctSplash.TabIndex = 3;
             this.pctSplash.TabStop = false;
+            // 
+            // tmrSplash
+            // 
+            this.tmrSplash.Enabled = true;
+            this.tmrSplash.Interval = 1000;
+            this.tmrSplash.Tick += new System.EventHandler(this.tmrSplash_Tick);
             // 
             // frmSplash
             // 
@@ -104,5 +110,6 @@ namespace Cantina
         private System.Windows.Forms.ProgressBar pgbSplash;
         private System.Windows.Forms.Label lblPorcentagem;
         private System.Windows.Forms.PictureBox pctSplash;
+        private System.Windows.Forms.Timer tmrSplash;
     }
 }

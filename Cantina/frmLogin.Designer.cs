@@ -30,23 +30,25 @@ namespace Cantina
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pctLogin = new System.Windows.Forms.PictureBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogin)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pctLogin
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(111, 83);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(202, 191);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pctLogin.Image = ((System.Drawing.Image)(resources.GetObject("pctLogin.Image")));
+            this.pctLogin.Location = new System.Drawing.Point(111, 83);
+            this.pctLogin.Name = "pctLogin";
+            this.pctLogin.Size = new System.Drawing.Size(202, 191);
+            this.pctLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctLogin.TabIndex = 0;
+            this.pctLogin.TabStop = false;
             // 
             // lblUsuario
             // 
@@ -68,21 +70,24 @@ namespace Cantina
             this.lblSenha.TabIndex = 2;
             this.lblSenha.Text = "Senha";
             // 
-            // textBox1
+            // txtUsuario
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(460, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 24);
-            this.textBox1.TabIndex = 3;
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(460, 104);
+            this.txtUsuario.MaxLength = 25;
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(194, 24);
+            this.txtUsuario.TabIndex = 0;
             // 
-            // textBox2
+            // txtSenha
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(460, 181);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 24);
-            this.textBox2.TabIndex = 4;
+            this.txtSenha.Font = new System.Drawing.Font("Wingdings", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.txtSenha.Location = new System.Drawing.Point(460, 181);
+            this.txtSenha.MaxLength = 10;
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = 'l';
+            this.txtSenha.Size = new System.Drawing.Size(194, 24);
+            this.txtSenha.TabIndex = 1;
             // 
             // btnEntrar
             // 
@@ -90,7 +95,7 @@ namespace Cantina
             this.btnEntrar.Location = new System.Drawing.Point(460, 244);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(75, 30);
-            this.btnEntrar.TabIndex = 5;
+            this.btnEntrar.TabIndex = 2;
             this.btnEntrar.Text = "&Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
             // 
@@ -100,9 +105,10 @@ namespace Cantina
             this.btnSair.Location = new System.Drawing.Point(579, 244);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 30);
-            this.btnSair.TabIndex = 6;
+            this.btnSair.TabIndex = 3;
             this.btnSair.Text = "&Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // frmLogin
             // 
@@ -111,18 +117,18 @@ namespace Cantina
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnEntrar);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblUsuario);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pctLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cantina - Login";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,11 +136,11 @@ namespace Cantina
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pctLogin;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblSenha;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Button btnSair;
     }
